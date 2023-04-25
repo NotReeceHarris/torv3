@@ -42,7 +42,7 @@ const v3 = torv3.generateOnionV3();
    publicKey: <Buffer>,   // ed25519 public key
    privateKey: <Buffer>,  // ed25519 private key
    address: <String>,     // TorV3 address
-   verified: <Boolean>         // Verify the address checksum match, the ed25519 public key.
+   verified: <Boolean>    // Verify the address checksum match, the ed25519 public key.
 }*/
 
 ```
