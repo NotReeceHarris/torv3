@@ -1,9 +1,6 @@
-const onionv3 = require('./index');
+const onionv3 = require('./build/index');
 
 const keys = onionv3.generateKeys();
-
-console.log(keys)
-
 const v3 = onionv3.generateOnionV3(keys.privateKey);
 
-console.log(v3);
+console.log(Buffer.compare(keys.publicKey, v3.publicKey) === 0 && v3.verified);
