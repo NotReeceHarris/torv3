@@ -1,10 +1,10 @@
 {
-  "name": "onionv3.js",
+  "name": "torv3",
   "version": "0.0.1",
   "description": "🧅 Address generator for tor onion v3 (ed25519) hidden services",
   "main": "index.js",
   "bin": {
-    "onionv3": "./build/index.js"
+    "torv3": "./build/index.js"
   },
   "scripts": {
     "build": "node ./build.js",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NotReeceHarris/onionv3.js.git"
+    "url": "git+https://github.com/NotReeceHarris/torv3.git"
   },
   "bugs": {
-    "url": "https://github.com/NotReeceHarris/onionv3.js/issues"
+    "url": "https://github.com/NotReeceHarris/torv3/issues"
   },
-  "homepage": "https://github.com/NotReeceHarris/onionv3.js#readme",
+  "homepage": "https://github.com/NotReeceHarris/torv3#readme",
   "author": "Reece Harris <reeceharris@email.com>",
   "license": "AGPL-3.0",
   "engines": {
