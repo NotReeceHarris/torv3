@@ -1,0 +1,16 @@
+{
+  "name": "onionv3.js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reece Harris <reeceharris@email.com>",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "hi-base32": "^0.5.1",
+    "sha3": "^2.1.4",
+    "sodium-native": "^4.0.1"
+  }
+}
