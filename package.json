@@ -21,7 +21,7 @@
   "author": "Reece Harris <reeceharris@email.com>",
   "license": "AGPL-3.0",
   "engines": {
-    "node": ">= 10.0.0"
+    "node": ">= 16.0.0"
   },
   "keywords": [
     "tor",
