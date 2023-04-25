@@ -1,16 +1,49 @@
 {
   "name": "onionv3.js",
   "version": "0.0.1",
-  "description": "",
+  "description": "🧅 Address generator for tor onion v3 (ed25519) hidden services",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "onionv3": "./build/index.js"
   },
+  "scripts": {
+    "build": "node ./build.js",
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NotReeceHarris/onionv3.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NotReeceHarris/onionv3.js/issues"
+  },
+  "homepage": "https://github.com/NotReeceHarris/onionv3.js#readme",
   "author": "Reece Harris <reeceharris@email.com>",
   "license": "AGPL-3.0",
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "keywords": [
+    "tor",
+    "onion-service",
+    "v3",
+    "onion-v3",
+    "tor-v3",
+    "hidden-services"
+  ],
   "dependencies": {
     "hi-base32": "^0.5.1",
     "sha3": "^2.1.4",
-    "sodium-native": "^4.0.1"
+    "sodium-native": "^4.0.1",
+    "yargs": "^17.7.1"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "build/"
+  ],
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "uglify-js": "^3.17.4"
   }
 }
