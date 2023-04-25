@@ -50,12 +50,6 @@ const v3 = torv3.generateOnionV3();
 ### CLI
 
 ```
-torv3 --help
-```
-
-This will display the help menu
-
-```
 torv3 [command]
 
 Commands:
