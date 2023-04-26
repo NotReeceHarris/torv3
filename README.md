@@ -1,5 +1,7 @@
 # 🧅 TorV3
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/NotReeceHarris/torv3/node.js.yml?label=Node.js%20CI&style=flat-square)
+
 This npm package generates Tor v3 addresses along with their corresponding public and private keys. Tor v3 addresses are a type of onion address used by the Tor network for enhanced anonymity and security. By using this package, users can easily generate unique Tor v3 addresses that are difficult to trace back to their source, providing an additional layer of privacy to their online activities. The generated keys are matched to ensure the integrity and security of the address.
 
 ## Installation
