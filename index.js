@@ -114,6 +114,13 @@ const generateOnionV3 = (privateKey = false) => {
  * @returns {Object} An object containing the public and private key buffers, the Onion v3 address and a verification flag
  */
 const vanityOnionV3 = (targetPrefix) => {
+
+	const regex = new RegExp('^(?=.{0,56}$)[a-z2-7]+$');
+
+	if (!regex.test(targetPrefix)) {
+		throw new Error('The provided prefix is invalid (^(?=.{0,56}$)[a-z2-7]+$)');
+	}
+
 	// Record the start time to calculate the total time taken to generate the onion address
 	const start = performance.now();
   
