@@ -1,6 +1,6 @@
 {
   "name": "torv3",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "🧅 Address generator for tor onion v3 (ed25519) hidden services",
   "main": "index.js",
   "bin": {
