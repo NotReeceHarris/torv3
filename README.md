@@ -33,16 +33,26 @@ const torv3 = require('torv3');
 
 const keys = torv3.generateKeys();
 /*{
-   privateKey: <Buffer>,  // ed25519 private key
-   publicKey: <Buffer>    // ed25519 public key
+   privateKey: <Buffer>,  // ed25519 private key.
+   publicKey: <Buffer>    // ed25519 public key.
 }*/
 
 const v3 = torv3.generateOnionV3();
 /*{
-   publicKey: <Buffer>,   // ed25519 public key
-   privateKey: <Buffer>,  // ed25519 private key
-   address: <String>,     // TorV3 address
+   publicKey: <Buffer>,   // ed25519 public key.
+   privateKey: <Buffer>,  // ed25519 private key.
+   address: <String>,     // TorV3 address.
    verified: <Boolean>    // Verify the address checksum match, the ed25519 public key.
+}*/
+
+const v3 = torv3.vanityOnionV3('torv3');
+/*{
+   publicKey: <Buffer>,   // ed25519 public key.
+   privateKey: <Buffer>,  // ed25519 private key.
+   address: <String>,     // TorV3 address.
+   verified: <Boolean>,   // Verify the address checksum match, the ed25519 public key.
+   lookups: <Number>      // The total number of lookup before finding desired hostname.
+   elapsed: <Number>      // Elapsed time to generation took.
 }*/
 
 ```
@@ -55,6 +65,7 @@ torv3 [command]
 Commands:
   torv3 keys      Generate ed25519 private and public keys
   torv3 generate  Generate a tor onion v3 address
+  torv3 vanity    Generate a vanity tor onion v3 address
 
 Options:
   --help     Show help                                                 [boolean]
@@ -76,5 +87,15 @@ Generates a pair of `ed25519` keys.
 ```js
 torv3.generateOnionV3(sk)
 ```
-Generates a `ed25519` key pair and `v3` hostname.
+Generates a `ed25519` key pair and a `v3` hostname.
 - `sk` is an optional buffer of the ed25519 private key.
+
+# 
+
+### `torv3.vanityOnionV3`
+```js
+torv3.vanityOnionV3(prefix)
+```
+Generates a `ed25519` key pair and a vanity `v3` hostname.
+- `prefix` is a required string prefix for the url.
+
