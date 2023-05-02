@@ -4,6 +4,11 @@ const base32 = require('hi-base32'); // Module for encoding and decoding base32 
 const sodium = require('sodium-native'); // Module for using cryptography functions provided by libsodium library
 const crypto = require('crypto'); // Built-in module for using cryptography functions
 
+// Linux support
+const {
+  performance
+} = require('perf_hooks');
+
 /**
  * Function to generate a public-private key pair for signing and verifying messages
  * @param {Buffer|false} privateKey - A buffer containing the private key or false if a new key pair is to be generated
